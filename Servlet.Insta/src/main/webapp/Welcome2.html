@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  overflow: hidden;
+}
+
+/* Welcome Container */
+.welcome-container {
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Heading Styling */
+.welcome-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtext Styling */
+.welcome-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.welcome-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff7b54;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-button:hover {
+  background: #ff5722;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+</style>
+<body>
+  <div class="welcome-container" >
+    <h1 class="welcome-heading">Welcome to My WebSite❤️❤️❤️</h1>
+    <p class="welcome-subtext">We are glad to have you here. Explore and enjoy our content.</p>
+    <a href="Welcome.html" class="welcome-button">Learn More</a>
+    <a href="Login2.html" class="welcome-button">LogOut</a>
+  </div>
+</body>
+</html>

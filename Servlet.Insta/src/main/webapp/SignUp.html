@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram Sign Up</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding-top:20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+	margin-top:10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+span{
+    color: red;
+}
+</style>
+<body>
+    <div class="container">
+     <h1>Rohit Persional Webside <br>Sign Up</h1>
+        <form action="signup" method="POST">
+            <input type="text" id="name" name="name" required placeholder="Enter your Name">
+
+            <input type="number" id="age" name="age" required placeholder="Enter your Age">
+            <span>Age Should be Greater than 13 years.</span>
+
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your Mobile_Number">
+
+            <input type="email" id="email" name="email" required placeholder="Enter your EmailId">
+
+            <input type="text" id="username" name="username" required placeholder="Enter your User_name">
+
+            <input type="text" id="password" name="password" required placeholder="Enter your Password">
+            <span>password should contain atleast one capital letter(A-Z)<br>
+            	password should contain atleast one Small letter(a-z)<br>
+            	password should contain atleast one  number(0-9)<br>
+            	password should contain atleast one Special Character<br>
+            	pasword length should be greater than or equal to eight</span>
+            
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
